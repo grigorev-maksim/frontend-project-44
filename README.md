@@ -4,4 +4,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f06644acea6d9f878b7/maintainability)](https://codeclimate.com/github/grigorev-maksim/frontend-project-44/maintainability)
 
-https://asciinema.org/a/usm85FCiU2S9JbAFwawEAtFshhttps://asciinema.org/a/usm85FCiU2S9JbAFwawEAtFsh
+https://asciinema.org/a/usm85FCiU2S9JbAFwawEAtFsh
