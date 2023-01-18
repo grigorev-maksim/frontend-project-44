@@ -5,3 +5,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f06644acea6d9f878b7/maintainability)](https://codeclimate.com/github/grigorev-maksim/frontend-project-44/maintainability)
 
 [![asciicast](https://asciinema.org/a/551795.svg)](https://asciinema.org/a/551795)
+
+[![asciicast](https://asciinema.org/a/552771.svg)](https://asciinema.org/a/552771)
