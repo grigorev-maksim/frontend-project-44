@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/552771.svg)](https://asciinema.org/a/552771)
 
 [![asciicast](https://asciinema.org/a/553245.svg)](https://asciinema.org/a/553245)
+
+[![asciicast](https://asciinema.org/a/553264.svg)](https://asciinema.org/a/553264)
