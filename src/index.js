@@ -16,7 +16,7 @@ const runGame = (description, game) => {
       return;
     }
   }
-  console.log(`Congratulations ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default runGame;
