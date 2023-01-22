@@ -1,4 +1,4 @@
-const game = () => {
+export const game = () => {
   const randomNumber1 = Math.floor(Math.random() * 100) + 1;
   const randomNumber2 = Math.floor(Math.random() * 100) + 1;
   const operators = ['+', '-', '*'];
@@ -22,4 +22,6 @@ const game = () => {
   return [question, String(correctAnswer)];
 };
 
-export default game;
+const description = 'What is the result of the expression?';
+
+export { description };

@@ -1,4 +1,4 @@
-const game = () => {
+export const game = () => {
   const number = Math.floor(Math.random() * 100) + 1;
   const step = Math.floor(Math.random() * 10) + 1;
   const progression = [];
@@ -13,4 +13,6 @@ const game = () => {
   return [question, String(correctAnswer)];
 };
 
-export default game;
+const description = 'What number is missing in the progression?';
+
+export { description };

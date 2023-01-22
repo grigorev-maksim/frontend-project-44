@@ -1,4 +1,4 @@
-const game = () => {
+export const game = () => {
   let randomNumber1 = Math.floor(Math.random() * 100) + 1;
   let randomNumber2 = Math.floor(Math.random() * 100) + 1;
   const question = `${randomNumber1} ${randomNumber2}`;
@@ -10,4 +10,6 @@ const game = () => {
   return [question, String(randomNumber1)];
 };
 
-export default game;
+const description = 'Find the greatest common divisor of given numbers.';
+
+export { description };

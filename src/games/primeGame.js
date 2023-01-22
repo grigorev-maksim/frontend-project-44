@@ -1,4 +1,4 @@
-const game = () => {
+export const game = () => {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
   const question = randomNumber;
   let correctAnswer;
@@ -19,4 +19,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-export default game;
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export { description };

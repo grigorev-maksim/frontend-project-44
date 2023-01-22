@@ -1,4 +1,4 @@
-const game = () => {
+export const game = () => {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
   let correctAnswer;
   if (randomNumber % 2 === 0) {
@@ -9,4 +9,6 @@ const game = () => {
   return [randomNumber, correctAnswer];
 };
 
-export default game;
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export { description };
