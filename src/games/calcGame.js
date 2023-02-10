@@ -1,24 +1,31 @@
-export const game = () => {
-  const randomNumber1 = Math.floor(Math.random() * 100) + 1;
-  const randomNumber2 = Math.floor(Math.random() * 100) + 1;
-  const operators = ['+', '-', '*'];
-  const index = Math.round(Math.random() * 2);
-  const operator = operators[index];
+import { getRandom } from '../utils.js';
+
+const getCorrectAnswer = (num1, operator, num2) => {
   let correctAnswer = 0;
-  const question = `${randomNumber1} ${operator} ${randomNumber2}`;
-  switch (index) {
-    case 0:
-      correctAnswer = randomNumber1 + randomNumber2;
+  switch (operator) {
+    case '+':
+      correctAnswer = num1 + num2;
       break;
-    case 1:
-      correctAnswer = randomNumber1 - randomNumber2;
+    case '-':
+      correctAnswer = num1 - num2;
       break;
-    case 2:
-      correctAnswer = randomNumber1 * randomNumber2;
+    case '*':
+      correctAnswer = num1 * num2;
       break;
     default:
       correctAnswer = 1;
   }
+  return correctAnswer;
+};
+
+export const game = () => {
+  const randomNumber1 = getRandom();
+  const randomNumber2 = getRandom();
+  const operators = ['+', '-', '*'];
+  const index = Math.round(Math.random() * 2);
+  const operator = operators[index];
+  const question = `${randomNumber1} ${operator} ${randomNumber2}`;
+  const correctAnswer = getCorrectAnswer(randomNumber1, operator, randomNumber2);
   return [question, String(correctAnswer)];
 };
 

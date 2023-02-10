@@ -1,7 +1,9 @@
+import { getRandom, isEven } from '../utils.js';
+
 export const game = () => {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = getRandom();
   let correctAnswer;
-  if (randomNumber % 2 === 0) {
+  if (isEven(randomNumber)) {
     correctAnswer = 'yes';
   } else {
     correctAnswer = 'no';
